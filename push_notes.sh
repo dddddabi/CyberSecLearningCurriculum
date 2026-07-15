@@ -14,7 +14,7 @@ while IFS= read -r line; do
     if [[ "$line" == "EOF" ]]; then
         break
     fi
-    USER_INPUT+="$line\n"
+    USER_INPUT+="$line\n\n"
 done
 
 if [ -z "$USER_INPUT" ]; then
